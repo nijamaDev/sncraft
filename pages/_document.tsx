@@ -23,7 +23,6 @@ export default class MyDocument extends Document {
             <script
               id="counterscale-script"
               src="https://counterscale-3rv.pages.dev/tracker.js"
-              // src="https://counterscale.nijama.workers.dev/tracker.js"
               defer
             />
             <link rel='shortcut icon' href='/favicon.ico' />
