@@ -16,7 +16,7 @@ export default siteConfig({
     Basic site info
   */
   name: 'Fanfus Projects',
-  domain: 'fanfus.com',
+  domain: 'fanfus.nijama.dev',
   author: 'Fanfus Projects',
 
   /* (optional)
@@ -110,7 +110,7 @@ Discover more about us.',
     }, */
     /* {
       title: '🌟 Other Projects ↗',
-      url: 'https://fanfus.com?utm_source=sncraft'
+      url: 'https://fanfus.nijama.dev?utm_source=sncraft'
     }, */
     /* {
       title: 'FAQ',

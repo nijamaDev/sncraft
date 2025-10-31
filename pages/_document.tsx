@@ -7,23 +7,7 @@ export default class MyDocument extends Document {
       <IconContext.Provider value={{ style: { verticalAlign: 'middle' } }}>
         <Html lang='en'>
           <Head>
-            <script defer data-domain="fanfus.com" src="https://plausible.fanfus.com/js/script.file-downloads.outbound-links.js"></script>
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-                  (function () {
-                    window.counterscale = {
-                      q: [["set", "siteId", "sncraft.fanfus.com"], ["trackPageview"]],
-                    };
-                  })();
-                `
-              }}
-            />
-            <script
-              id="counterscale-script"
-              src="https://counterscale-3rv.pages.dev/tracker.js"
-              defer
-            />
+            <script defer data-domain="fanfus.nijama.dev" src="https://plausible.nijama.dev/js/script.file-downloads.outbound-links.js"></script>
             <link rel='shortcut icon' href='/favicon.ico' />
             <link
               rel='icon'
