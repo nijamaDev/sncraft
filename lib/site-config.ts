@@ -7,18 +7,22 @@ export interface SiteConfig {
   name: string
   domain: string
   author: string
+  indexable?: boolean
   description?: string
   language?: string
 
   discord?: string
   discord_invite?:  string
+  youtube?: string
   twitter?: string
+  mastodon?: string;
   github?: string
   linkedin?: string
   newsletter?: string
-  youtube?: string
   zhihu?: string
-  mastodon?: string
+  modrinth?: string
+  curseforge?: string
+  planetminecraft?: string
 
   defaultPageIcon?: string | null
   defaultPageCover?: string | null

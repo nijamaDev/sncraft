@@ -65,6 +65,9 @@ export const newsletter: string | undefined = getSiteConfig('newsletter')
 export const zhihu: string | undefined = getSiteConfig('zhihu')
 export const discord: string | undefined = getSiteConfig('discord')
 export const discord_invite: string | undefined = getSiteConfig('discord_invite')
+export const curseforge: string | undefined = getSiteConfig('curseforge')
+export const planetminecraft: string | undefined = getSiteConfig('planetminecraft')
+export const modrinth: string | undefined = getSiteConfig('modrinth')
 
 export const getMastodonHandle = (): string | undefined => {
   if (!mastodon) {

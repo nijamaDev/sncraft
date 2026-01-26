@@ -1,3 +1,6 @@
+// vercel analytics
+import { Analytics } from '@vercel/analytics/react';
+
 import type { PageProps } from '@/lib/types'
 import { NotionPage } from '@/components/NotionPage'
 import { domain } from '@/lib/config'
@@ -18,5 +21,10 @@ export const getStaticProps = async () => {
 }
 
 export default function NotionDomainPage(props: PageProps) {
-  return <NotionPage {...props} />
+  return (
+    <>
+      <NotionPage {...props} />
+      <Analytics />
+    </>
+  )
 }

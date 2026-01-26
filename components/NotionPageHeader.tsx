@@ -68,7 +68,8 @@ export function NotionPageHeader({
                     {link.title}
                   </components.PageLink>
                 )
-              } else {
+              } 
+              if (link.url) {
                 return (
                   <components.Link
                     href={link.url}
@@ -79,6 +80,7 @@ export function NotionPageHeader({
                   </components.Link>
                 )
               }
+              return null
             })
             .filter(Boolean)}
 

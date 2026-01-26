@@ -4,7 +4,7 @@ export default siteConfig({
   /* (required)
     The site's root Notion page
   */
-  rootNotionPageId: '7875426197cf461698809def95960ebf',
+  rootNotionPageId: 'f9b740741d2c4e4bbc837800cc3a81b3',
 
   /* (optional)
     if you want to restrict pages to a single notion workspace
@@ -15,26 +15,37 @@ export default siteConfig({
   /* (required)
     Basic site info
   */
-  name: 'Next.js Notion Starter Kit',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
-  author: 'Travis Fischer',
+  name: 'Shingeki no Craft Official Site & Wiki',
+  domain: 'sncraft.fanfus.com',
+  author: 'Fanfus Projects',
+
+  /* (optional)
+    Crawlable by Google and other robots, required if you want Google to index the website, defaults to false.
+  */
+  indexable: true,
 
   /* (optional)
     Open graph metadata
   */
-  description: 'Example Next.js Notion Starter Kit Site',
+  description: '\
+Shingeki no Craft Official Site and Wiki.\n\
+An Attack on Titan Minecraft Datapack.\n\
+Sncraft by Fanfus Projects',
 
   /* (optional)
     Social usernames
   */
-  twitter: 'transitive_bs',
-  github: 'transitive-bullshit',
-  linkedin: 'fisch2',
-  // discord: 'My Server',  /* Server Name */
-  // discord_invite: 'https://discord.gg/zf6g5KQ6H4', /* Discord invite link */
+  discord: 'Shingeki no Craft Official Server',
+  discord_invite: 'https://discord.gg/zf6g5KQ6H4',
+  youtube: '@FanfoYT', /* Optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX` */
+  twitter: 'FanfoArtss',
   // mastodon: '#', /* Optional mastodon profile URL, provides link verification */
+  // github: 'nijamaDev',
+  // linkedin: 'nijamaDev',
   // newsletter: '#', /* Optional newsletter URL */
-  // youtube: '#', /* Optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX` */
+  modrinth: 'https://modrinth.com/datapack/shingeki-no-craft/versions',
+  //curseforge: 'https://www.curseforge.com/minecraft/customization/shingeki-no-craft',
+  planetminecraft: 'https://www.planetminecraft.com/data-pack/shingeki-no-craft-2/',
 
   /* (optional)
     Default notion icon and cover images for site-wide consistency.
@@ -47,11 +58,11 @@ export default siteConfig({
   /* (optional)
     Whether or not to enable support for LQIP preview images.
   */
-  isPreviewImageSupportEnabled: true,
+  isPreviewImageSupportEnabled: false,
 
   /* (optional)
     Whether or not redis is enabled for caching generated preview images.
-    NOTE: if you enable redis, you need to set the `REDIS_HOST` 
+    NOTE: If you enable redis, you need to set the `REDIS_HOST` 
     and `REDIS_PASSWORD` environment variables.
     See the readme for more info.
   */
@@ -62,27 +73,55 @@ export default siteConfig({
     Any pages defined here will override their default URL paths.
     Example:
   */
-  // pageUrlOverrides: {
-  //   '/foo': '067dd719a912471ea9a3ac10710e7fdf',
-  //   '/bar': '0be6efce9daf42688f65c76b89f8eb27'
-  // }
-  pageUrlOverrides: null,
-
+  pageUrlOverrides: {
+    '/149719398400': 'f93cee3b32b440068d3d1059a351a9f3',
+    '/did-you-know': '13e6ae6a2e1f476d8a2b3a5a5346a4e4',
+    '/next': '72e247bea8a14bbba1a2cb3b171fe7c1',
+    '/gsod':'6866cb16c3194bc0843f34b410ae4a3b',
+    '/harten' : '1a0205f4527f8021824cc71c78b500bf'
+    // '/bar': '0be6efce9daf42688f65c76b89f8eb27'
+  },
+  // pageUrlOverrides: null,
+  
   /* 
     Whether to use the default notion navigation style
     or a custom one with links to important pages.
     To use `navigationLinks`, set `navigationStyle` to `custom`.
   */
-  navigationStyle: 'default'
-  // navigationStyle: 'custom',
-  // navigationLinks: [
-  //   {
-  //     title: 'About',
-  //     pageId: 'f1199d37579b41cbabfc0b5174f4256a'
-  //   },
-  //   {
-  //     title: 'Contact',
-  //     url: 'https://twitter.com/transitive_bs'
-  //   }
-  // ]
+  // navigationStyle: 'default'
+  navigationStyle: 'custom',
+  navigationLinks: [
+    {
+      title: '🚀 Get Started',
+      pageId: '606e973b50894bfeb44a9da19033133e'
+    },
+    {
+      title: '📚 Wiki',
+      pageId: '03427235b5bc4055aefb5347895e562b'
+    },
+    {
+      title: '❤️ Download',
+      pageId: '51c9a58fa9eb427fa8e703c0fb6fa362'
+    },
+    {
+      title: '🌟 Other Projects ↗',
+      url: 'https://fanfus.com?utm_source=sncraft'
+    },
+    /* {
+      title: 'FAQ',
+      pageId: 'd1becce18ab24a59b020cd780f5634ff'
+    },
+    {
+      title: 'Discord',
+      url: 'https://discord.gg/zf6g5KQ6H4'
+    },
+    {
+      title: 'About us',
+      pageId: 'da705a355d6f49c18078b6cd948bce4e'
+    },
+    {
+      title: 'Support us',
+      url: 'https://www.patreon.com/Fanfo'
+    } */
+  ]
 })
