@@ -7,7 +7,7 @@ export default class MyDocument extends Document {
       <IconContext.Provider value={{ style: { verticalAlign: 'middle' } }}>
         <Html lang='en'>
           <Head>
-            <script defer data-domain="aiko.ink" src="https://plausible.fanfus.com/js/script.file-downloads.outbound-links.js"></script>
+            <script defer data-domain="aikohq.com" src="https://plausible.fanfus.com/js/script.file-downloads.outbound-links.js"></script>
             <link rel='shortcut icon' href='/favicon.ico' />
             <link
               rel='icon'

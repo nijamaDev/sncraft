@@ -16,7 +16,7 @@ export default siteConfig({
     Basic site info
   */
   name: 'Aiko App',
-  domain: 'aiko.ink',
+  domain: 'aikohq.com',
   author: 'nijamaDev',
 
   /* (optional)
